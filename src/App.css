@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@500&display=swap");
+
+body {
+  background: #1e293b;
+}
+#details {
+  scrollbar-width: thin;
+}
+#details::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+  padding: 4;
+}
+
+#details::-webkit-scrollbar-thumb {
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.ff-monsterrate {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ff-Open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* #image-container {
+  background: radial-gradient(circle, transparent -50%, rgba(0, 0, 0, 1) 100%);
+} */
+.genre::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: -8px;
+  height: 50%;
+  width: 5px;
+  background: whitesmoke;
+}
+
+.error-container {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
