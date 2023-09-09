@@ -1,5 +1,4 @@
 import LandingPage from "./LandingPage";
-import "./stylesheet/Autoplay.css";
 
 function Home() {
   return (

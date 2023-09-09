@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { DotButton, PrevButton, NextButton } from "./Navigator";
 import { List } from "../../images";
-
+import "../../stylesheet/Autoplay.css";
 import { FaPlay } from "react-icons/fa";
 
 const MovingBackground = ({ setId }) => {
