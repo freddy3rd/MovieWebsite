@@ -7,24 +7,27 @@ import Navigation from "./components/Navigation";
 import MovieDetail from "./components/MovieDetail";
 import ContextProvide from "./components/ContextProvide";
 import ProtectedRoutes from "./components/utils/ProtectedRoute";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <ContextProvide>
-      <Router>
-        <div className="App">
-          <Navigation />
-          <div className="Content">
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route element={<ProtectedRoutes />}>
-                <Route path="/Details" element={<MovieDetail />} />
-              </Route>
-              <Route path="*" element={<ErrorPage />} />
-            </Routes>
+      <AnimatePresence>
+        <Router>
+          <div className="App">
+            <Navigation />
+            <div className="Content">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route element={<ProtectedRoutes />}>
+                  <Route path="/Details" element={<MovieDetail />} />
+                </Route>
+                <Route path="*" element={<ErrorPage />} />
+              </Routes>
+            </div>
           </div>
-        </div>
-      </Router>
+        </Router>
+      </AnimatePresence>
     </ContextProvide>
   );
 }

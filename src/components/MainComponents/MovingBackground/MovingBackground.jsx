@@ -64,14 +64,14 @@ const MovingBackground = ({ setId }) => {
               <React.Fragment key={data.id}>
                 <div className="embla__slide_moving relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t from-slate-800 from-10% after:backdrop-blur-md">
                   <div className="md:p-8 p-4 md:self-end self-center absolute top-28 left-0 z-40">
-                    <h1 className="font-bold md:text-6xl text-4xl mb-4 text-slate-50 ff-monsterrate relative md:w-3/5">
+                    <h1 className="font-bold md:text-6xl text-3xl mb-4 text-slate-50 ff-monsterrate relative md:w-3/5">
                       {data.title}
                       {data.genre.includes("Drama") ? (
                         <div className="absolute -top-6 left-1 text-slate-200 text-sm flex gap-2">
                           <span>{data.episode}</span>
                         </div>
                       ) : (
-                        <div className=" left-1 text-slate-200 text-sm flex items-center gap-3 mt-2">
+                        <div className=" left-1 text-slate-200 text-sm md:flex items-center gap-3 mt-2">
                           <span className="px-2 bg-emerald-600 rounded-md">
                             {data.Quality}
                           </span>
@@ -79,7 +79,7 @@ const MovingBackground = ({ setId }) => {
                             Duration:
                             <i>{data.duration}</i>
                           </span>
-                          <span className="flex gap-3 items-center">
+                          <span className="flex gap-3 items-center w-full flex-wrap">
                             Genre:
                             {data.genre.map((data, index) => (
                               <i key={index}>{data}</i>
@@ -113,7 +113,7 @@ const MovingBackground = ({ setId }) => {
           </div>
         </div>
       </div>
-      <div className="embla__buttons bottom-0 right-10 text-slate-50">
+      <div className="embla__buttons bottom-0 right-10 z-10 text-slate-50">
         <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
         <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
       </div>

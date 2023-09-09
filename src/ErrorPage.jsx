@@ -2,7 +2,7 @@ import React from "react";
 
 function ErrorPage() {
   return (
-    <div className="w-full h-screen text-slate-50 bg-slate-800 grid place-items-center ">
+    <div className="w-full h-screen text-slate-50 bg-slate-800 grid place-items-center px-4">
       <div className="p-6 max-w-4xl rounded-md relative backdrop-blur-sm bg-slate-50/30 ">
         <h1 className="md:text-6xl text-4xl tracking-widest font-bold mb-3  ">
           <span className=" text-red-600">Error:</span> Page not Found!!

@@ -103,6 +103,7 @@ export const List = [
     id: "10",
     title: "Elemental",
     genre: ["Action", "Family"],
+    duration: "90min",
     detail:
       "Fire elements Bernie and Cinder Lumen immigrate to Element City, where they face xenophobia from other elements and struggle to find a home. They have a daughter, Ember, and eventually establish a convenience store called the Fireplace, setting up a Blue Flame that represents their heritage and traditions and attracting many fire element patrons over time. Bernie intends to give the store to Ember when he retires, but first she must control her fiery temper. When Bernie allows Ember to run the shop on her own, she becomes overwhelmed by the customers and rushes to the basement. Her fiery outburst breaks a water pipe, flooding the basement and summoning Wade Ripple, a water element and city inspector. Wade notes the faulty plumbing and reluctantly leaves for City Hall to send the violation report to his air element employer, Gale Cumulus, who will have the Fireplace shut down. Ember pursues Wade",
     image: "Elemental-poster.jpeg",
