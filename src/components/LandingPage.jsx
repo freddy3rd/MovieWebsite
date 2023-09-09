@@ -8,7 +8,7 @@ import { List } from "./images";
 import { Context } from "./MainComponents/context/Context";
 import Loader from "./MainComponents/loader";
 import MovingBackground from "./MainComponents/MovingBackground/MovingBackground";
-
+import "./stylesheet/autoplay.css";
 function LandingPage() {
   const { imageLoaded, bgLoaded } = useContext(Context);
 
